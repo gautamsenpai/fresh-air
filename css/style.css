@@ -19,8 +19,15 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #777777;
+    padding: 30px;
 }
 
 .header {
     height: 95vh;
+    background-image: 
+        linear-gradient(to right bottom, 
+                        #7ed56fbd, 
+                        #55c57ab4), 
+        url(../img/hero.jpg);
+    clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
 }
