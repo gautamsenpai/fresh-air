@@ -44,6 +44,16 @@
         }
 
     }
+
+    &--green {
+        background: $color-primary;
+        color: $color-pure-white;    
+
+        &::after {
+            background-color: $color-primary;
+        }
+
+    }
     
     &::after {
         content: "";
