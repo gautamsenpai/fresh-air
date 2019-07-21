@@ -1,5 +1,5 @@
 .btn {
-
+    &,
     &:link {
         font-size: $default-font-size;
         text-transform: uppercase;
@@ -9,6 +9,9 @@
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
+                // changes for the <button> element
+                border: none;
+                cursor: pointer;
     }
     &:visited {
         font-size: $default-font-size;
@@ -30,8 +33,10 @@
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-1px);
+        outline: none;
         box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
     }
     
